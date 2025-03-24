@@ -1,16 +1,17 @@
 
 <html lang="zh-CN">
 <head>
-<style>
-    h1{
-    font-size: 30px;
-    color: rgb(43, 89, 226);
-    }
-    h2{
-    font-size: 20px;
-    color: rgb(43, 89, 226);
-    }
-</style>
+    <style>
+        h1 {
+            font-size: 30px;
+            color: rgb(43, 89, 226);
+        }
+
+        h2 {
+            font-size: 20px;
+            color: rgb(43, 89, 226);
+        }
+    </style>
 </head>
 
 <body>
