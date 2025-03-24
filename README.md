@@ -3,8 +3,8 @@
 <head>
     <style>
         h1 {
-            font-size: black;
-            color: rgb(43, 89, 226);
+            font-size: 30px;
+            color: black;
         }
 
         h2 {
