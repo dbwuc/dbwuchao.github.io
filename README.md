@@ -3,19 +3,18 @@
 <head>
     <style>
         h1 {
-            font-size: 30px;
+            font-size: black;
             color: rgb(43, 89, 226);
         }
 
         h2 {
             font-size: 20px;
-            color: rgb(43, 89, 226);
+            color: black;
         }
     </style>
 </head>
 
 <body>
-<h1>dbwuchao博客</h1>
 <h2>前端技术</h2>
 <div><a href="前端html.html" target="_blank">前端HTML</a></div>
 <div><a href="CSS.html" target="_blank" >CSS</a></div>
