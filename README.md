@@ -72,13 +72,6 @@
 
 <!-- 博客时钟 -->
 <div class="clock" id="clock"></div>
-<p>6表单
-            <form action="https://www.baidu.com/s">
-                <input type="text" name="wd">
-                <button>搜索</button>
-            </form>
-        </p>
-        <br>
 <div class="container">
     <a href="#" >回到顶部</a>
     <a href="" >刷新页面</a>

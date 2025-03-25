@@ -263,10 +263,32 @@
         </p>
 
         <p>6表单
+            <p>1基本结构</p>
             <form action="https://www.baidu.com/s">
                 <input type="text" name="wd">
                 <button>搜索</button>
             </form>
+            <p>2常用控件<br>
+
+                <form action="https://search.jd.com/search">
+                    账户:<input type="text"  name="account" value="默认值" maxlength="10"> <br>
+                    密码:<input type="password"  name="pwd" value="123" maxlength="6"> <br>
+                    性别:
+                    <input type="radio" name="gender" value="male" checked>男  
+                    <input type="radio" name="gender" value="female">女  
+                        <br>
+                    爱好:
+                    <input type="checkbox" name="hobby" value="smoke" checked> 抽烟
+                    <input type="checkbox" name="hobby" value="drink"> 喝酒
+                    <input type="checkbox" name="hobby" value="prem"> 烫头 <br>
+                   <!--  -->
+                    <input type="hidden" name="tag" value="123">
+
+
+                    <input type="submit" value="确认">
+                    <input type="reset" value="重置">
+                </form>
+            </p>
         </p>
 
 
