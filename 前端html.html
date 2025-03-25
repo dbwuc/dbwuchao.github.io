@@ -262,7 +262,7 @@
         </table>
         </p>
 
-        <p>6表单
+        <p>表单
             <p>1基本结构</p>
             <form action="https://www.baidu.com/s">
                 <input type="text" name="wd">
@@ -288,6 +288,7 @@
                     籍贯:
                     <select name="place">
                         <option value="冀" selected>河北</option>
+                        <option value="京" disabled>北京</option>
                         <option value="鲁">山东</option>
                     </select>
 
@@ -297,6 +298,71 @@
 
                 </form>
             </p>
+
+            <p>3label标签<br>
+
+                <form action="https://search.jd.com/search">
+                    账户:<input type="text"  name="account" value="默认值" maxlength="10"> <br>
+                    <label>密码:<input type="password"  name="pwd" value="123" maxlength="6"></label> <br>
+                    性别:
+                    <input type="radio" name="gender" value="male" checked>男  
+                    <input type="radio" name="gender" value="female">女  
+                        <br>
+                    爱好:
+                    <input type="checkbox" name="hobby" value="smoke" checked> 抽烟
+                    <input type="checkbox" name="hobby" value="drink"> 喝酒
+                    <input type="checkbox" name="hobby" value="prem"> 烫头 <br>
+                   <!--  -->
+                    <input type="hidden" name="tag" value="123">
+                    其他:
+                    <textarea name="other" cols="23" rows="3"></textarea> <br>
+                    籍贯:
+                    <select name="place">
+                        <option value="冀" selected>河北</option>
+                        <option value="京" disabled>北京</option>
+                        <option value="鲁">山东</option>
+                    </select>
+
+                    <button type="submit" >确认</button>
+                    <button type="reset">重置</button>
+                    <button type="button">检测账户是否被注册</button>
+
+                </form>
+            </p>
+
+            <p>
+                4 fieldset与legend<br>
+                <form action="https://search.jd.com/search">
+               <fieldset>
+                <legend>主要信息</legend>
+                账户:<input type="text"  name="account" value="默认值" maxlength="10"> <br>
+                    密码:<input type="password"  name="pwd" value="123" maxlength="6"> <br>
+                    性别:
+                    <input type="radio" name="gender" value="male" checked>男  
+                    <input type="radio" name="gender" value="female">女  
+                        <br>
+                    爱好:
+                    <input type="checkbox" name="hobby" value="smoke" checked> 抽烟
+                    <input type="checkbox" name="hobby" value="drink"> 喝酒
+                    <input type="checkbox" name="hobby" value="prem"> 烫头 <br>
+               </fieldset>
+
+                </form>  
+            </p>
+
+            <p>
+                5 框架标签iframe嵌入普通网页:<br>
+                <iframe src="https://www.baidu.com" width="900" height="300" frameborder="1"></iframe>
+            </p> 
+
+            <p>
+               6 字符实体 &nbsp:<br>
+                &amp;nbsp;  用来表达空格<br>
+               &lt;h1&gt; 表示普通文本<br>
+               &amp;  用来表达<br>
+               &yen199
+            </p> 
+            
         </p>
 
 
