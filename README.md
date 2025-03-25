@@ -71,6 +71,13 @@
 <body>
 
 <!-- 博客时钟 -->
+<p>
+            <form action="https://www.baidu.com/s">
+                <input type="text" name="wd">
+                <button>搜索</button>
+            </form>
+        </p>
+        <br>
 <div class="clock" id="clock"></div>
 <div class="container">
     <a href="#" >回到顶部</a>
