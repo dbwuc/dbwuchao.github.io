@@ -23,19 +23,7 @@
             z-index: -1;
         }
 
-        /* 时钟样式 */
-        .clock {
-            position: fixed;
-            top: 20px;
-            left: 120px;
-            background: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 20px 40px;
-            border-radius: 15px;
-            font-size: 30px;
-            font-weight: bold;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-        }
+       
 
         /* 让 h2 居中 */
         h2 {
@@ -113,24 +101,7 @@
     <a href="Flink.html" class="card">Flink</a>
 </div>
 
-<!-- JavaScript 时钟逻辑 -->
-<script>
-    function updateClock() {
-        const now = new Date();
-        const year = now.getFullYear();
-        const month = String(now.getMonth() + 1).padStart(2, '0');
-        const day = String(now.getDate()).padStart(2, '0');
-        const hours = String(now.getHours()).padStart(2, '0');
-        const minutes = String(now.getMinutes()).padStart(2, '0');
-        const seconds = String(now.getSeconds()).padStart(2, '0');
 
-        const timeString = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
-        document.getElementById("clock").textContent = timeString;
-    }
-
-    setInterval(updateClock, 1000); // 每秒更新一次
-    updateClock(); // 立即运行一次，避免刷新时延迟
-</script>
 
 </body>
 </html>
