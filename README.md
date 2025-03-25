@@ -104,6 +104,7 @@
 <div class="container">
     <a href="#" >回到顶部</a>
     <a href="" >刷新页面</a>
+    <a href="javascript:alert(666);" >点我弹窗</a>
 </div>
 
 
