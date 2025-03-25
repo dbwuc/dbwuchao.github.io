@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -28,7 +27,7 @@
         .clock {
             position: fixed;
             top: 20px;
-            left: 20px;
+            left: 120px;
             background: rgba(0, 0, 0, 0.7);
             color: white;
             padding: 20px 40px;
