@@ -72,6 +72,13 @@
 
 <!-- 博客时钟 -->
 <div class="clock" id="clock"></div>
+<div class="container">
+    <a href="#" >回到顶部</a>
+    <a href="" >刷新页面</a>
+    <a href="javascript:alert(666);" >点我弹窗</a>
+    <a href="tel:10086" >点我打电话</a>
+    <a href="mailto:123456" >点我发邮件</a>
+</div>
 
 <h2>前端技术</h2>
 <div class="container">
@@ -101,11 +108,7 @@
     <a href="Flink.html" class="card">Flink</a>
 </div>
 
-<div class="container">
-    <a href="#" >回到顶部</a>
-    <a href="" >刷新页面</a>
-    <a href="javascript:alert(666);" >点我弹窗</a>
-</div>
+
 
 
 
