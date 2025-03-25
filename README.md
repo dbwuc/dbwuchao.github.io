@@ -23,7 +23,7 @@
             width: 100%;
             height: 100%;
             background: url('./book.jpg') center/cover no-repeat;
-            opacity: 0.5; /* 让背景图透明 */
+            opacity: 0.3; /* 让背景图透明 */
             z-index: -1;
         }
     </style>
