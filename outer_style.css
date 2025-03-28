@@ -1,0 +1,139 @@
+
+    div {
+        font-size: 10px;
+        color:black;  
+    }
+    p {
+        font-size: 10px;
+        color:black; 
+    }
+    image {
+        width: 20;
+    }
+    .a1{
+        font-size: 10px;
+        color: red;
+    }
+    .a2{
+        font-size: 10px;
+    }
+    .a3{
+        color: blue;
+    }
+    #id{
+        color: blue;
+    }
+    p.a4{
+        color: pink;
+    }
+    .rich{
+        color: red;
+    }
+    .beauty{
+        color: pink;
+    }
+    .dog{
+        color: green;
+    }
+    .beauty,
+    .dog,
+    .rich{
+        font-size: 100;
+        background-color:antiquewhite ;
+    }
+
+
+    o1 li {
+        color: pink;
+    }
+    ol.subject li{
+        color: aquamarine;
+
+    }
+
+    div>a{
+        color: red;
+    }
+
+    .foot>a{
+        color: chocolate;
+    }
+
+    ul.brother li+li{
+        color: red;
+
+    }
+    ul.brother+li{
+        color: green;
+
+    }
+    a.baidu:link{
+        color:orange;
+    }
+    a.taobao:hover{
+        color:yellowgreen;
+    }
+    a.taobao1:active{
+        color:aqua;
+    }
+    a.jd:visited{
+        color:gray;
+    }
+    input:focus,select:focus{
+        background-color: aqua;
+        
+    }
+
+    div.first_child>p:first-child{
+        color: red;
+    }
+
+    div.last_child>p:last-child{
+        color: pink;
+    }
+    div.nth-child>p:nth-child(2n){
+        color:brown;
+    }
+    div.nth-child-top5>p:nth-child(-n+5){
+        color:brown;
+    }
+    div.nth-last-child>p:nth-last-child(2n){
+        color:brown;
+    }
+
+    .no_brother:only-child{
+        color:blue;
+    }
+    .only-of-type:only-of-type{
+        color:blue;
+    }
+    /* div.failer>p:not(.fail){
+        background-color: pink;
+    } */
+    div.failer>p:not([title^="你要加油"]){
+        background-color: pink;
+    }
+
+    div:target{
+        background-color: pink;
+    }
+
+    div.first-line::first-letter{
+        background-color: green;
+    }
+    div.first-line::before{
+        content: "我在前面加上的,不可选中";
+    }
+    #extend{
+        color: coral;
+    }
+
+    #color-1{
+        color: rgb(138, 43, 226);
+    }
+    #color-2{
+        color: rgb(100%, 0, 0);
+    }
+    #color-3{
+        color: rgba(255, 0, 0,0.1);
+    }
