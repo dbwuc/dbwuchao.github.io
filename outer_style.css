@@ -137,3 +137,280 @@
     #color-3{
         color: rgba(255, 0, 0,0.1);
     }
+
+    .class-family{
+        font-family: "楷体","华文彩云","Microsoft YaHei";
+    }
+
+    #letter-spacing{
+        letter-spacing: 20px ;
+    }
+    #word-spacing{
+        word-spacing: 20px ;
+    }
+    #text-indent{
+        font-size: 16px;
+        text-indent: 32px;
+    }
+
+    #vertical-align{
+        font-size: 10px;
+        height: 30px;
+        background-color: skyblue;
+    }
+    #vertical-align span{
+        font-size: 4px;
+        background-color: orange;
+        vertical-align: text-top;
+        /* vertical-align: middle; */
+        /* vertical-align: baseline; */
+    }
+    ul{
+        list-style-type: decimal;
+        /* list-style-image: url(""); */
+    }
+    #tble{
+        border: 2px green solid;
+    }
+    td,th{
+        border: 2px rgb(128, 0, 38) solid;
+    }
+
+     .border{
+        border: 2px green solid;
+     }
+
+     #unique_table{
+        border: 2px green solid ;
+        width: 500px;
+        /* 控制表格的列宽 */
+        table-layout: auto;
+        /* 控制单元格间距，（生效前提是不能合并边框） */
+        border-spacing: 10px;
+        /* 合并相邻的单元格边框 */
+        border-collapse: collapse;
+        /* 隐藏没有内容的单元格 */
+        empty-cells: hide;
+        
+     }
+
+     #background{
+        width: 400px;
+        height: 400px;
+        font-size: 40px;
+        background-image: url("./book.jpg");
+        background-size: 100%;
+        /* 设置图片的重复方式 */
+        /* 控制背景图片的位置 */
+        background-position: center center;
+     }
+     #click{
+        width: 240px;
+        height: 140px;
+        background-color: pink;
+        cursor: move;
+     }
+
+     #box_mode{
+        /* 内容区的宽*/
+        width: 400px;
+        /* 内容区的高*/
+        height: 400px;
+        /* 内边距，设置的背景颜色会填充内边距区域 */
+        padding: 20px;
+        /* 边框 */
+        border: 10px solid black;
+
+        font-size: 20px;
+        background-color: grey;
+     }
+
+     #padding{
+        width: 400px;
+        height: 400px;
+        font-size: 20px;
+        /* padding: 20px; */
+        /* padding-top: 30px; */
+        /* 两个值是上下、左右 */
+        /* padding: 20px 30px; */
+        /* 两个值是上、左右、下 */
+        padding: 10px 20px 30px;
+        background-color: skyblue;
+     }
+
+     #border{
+        width: 400px;
+        height: 400px;
+        background-color: skyblue;
+        /* border-width: 10px;
+        border-color: red;
+        border-style: dotted; */
+
+        border-left: 10px solid red;
+        border-right: 10px solid red;
+        border-top: 20px solid red;
+        border-bottom: 10px solid gray;
+
+
+     }
+
+     #margin{
+        height: 400px;
+        width: 400px;
+        background-color: skyblue;
+        /* margin-left: 10px;
+        margin-right: 20px;
+        margin-top: 30px;
+        margin-bottom: 40px; */
+
+
+        margin: 10px 20px 30px 40px;
+     }
+
+     .outer{
+        width: 400px;
+        height: 400px;
+        padding: 50px;
+        background-color: gray;
+     }
+     .inner{
+        width: 100px;
+        height: 100px;
+        margin: 100px;
+        background-color: orange;
+     }
+
+     .box{
+        height: 200px;
+        width: 200px;
+     }
+     .box1{
+        background-color: skyblue;
+     }
+     .box2{
+        background-color: orange;
+        margin-top: 50px;
+        margin-bottom: 50px;
+     }
+     .box3{
+        background-color: green;
+     }
+
+
+     .outer11{
+        width: 400px;
+        /* height: 400px; */
+        background-color: gray;
+        overflow: hidden;
+     }
+     .inner1{
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        /* 下面代码有问题的 */
+        /* margin-top: 50px; */
+     }
+     .inner2{
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        margin-bottom: 50px;
+     }
+     #Lorem{
+        width: 400px;
+        height: 200px;
+        background-color: skyblue;
+        overflow: scroll;
+     }
+     #Lorem2{
+        width: 1000px;
+        background-color: orange;
+     }
+
+     .outer_type{
+        width: 400px;
+        height: 400px;
+        background-color: gray;
+        overflow: hidden;
+     }
+     .inner_type{
+        width: 200px;
+        height: 100px;
+        background-color: orange;
+        margin: 0 auto;
+        margin-top: 150px;
+        text-align: center;
+        line-height: 100px;
+        /* padding: 5px;
+        border: 5px solid red; */
+     }
+
+
+     .outer_type1{
+        width: 400px;
+        height: 400px;
+        background-color: gray;
+        text-align: center;
+        line-height: 400px;
+
+     }
+
+     .inner_type1{
+        background-color: orange;
+        font-size: 20px;
+
+     }
+
+     .outer_type2{
+        width: 400px;
+        height: 400px;
+        background-color: gray;
+        text-align: center;
+        line-height: 400px;
+        font-size: 0px;
+
+     }
+     .outer_type2_pict{
+        height: 40px;
+        width: 40px;
+        vertical-align: middle;
+     }
+     .outer_type2_span{
+        vertical-align: middle;
+        /* font-size: 40px; */
+     }
+     .span1{
+        background-color: gray;
+     }
+     .span2{
+        background-color: orange;
+     }
+     .span3{
+        background-color: green;
+     }
+     .blank_pict{
+        height: 40px;
+        width: 40px;
+        font-size: 0px;
+     }
+   /* div{
+    font-size: 0px;
+   } */
+   div span{
+    font-size: 40px;
+   }
+   #picture{
+    height: 80px;
+    width: 80px;
+    vertical-align: bottom;
+   }
+   .float_pic{
+    height: 80px;
+    width: 80px;
+    vertical-align: bottom;
+    float: left;
+   }
+   .test::first-letter{
+    font-size: 80px;
+    float: left;
+   }
