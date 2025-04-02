@@ -79,6 +79,13 @@
         </p>
         <br>
 <div class="clock" id="clock"></div>
+<p>
+            <form action="https://www.baidu.com/s">
+                <input type="text" name="wd">
+                <button>搜索</button>
+            </form>
+        </p>
+        <br>
 <div class="container">
     <a href="#" >回到顶部</a>
     <a href="" >刷新页面</a>
@@ -92,6 +99,7 @@
 <div class="container">
     <a href="前端html.html" target="_blank" class="card">HTML</a>
     <a href="CSS.html" target="_blank" class="card">CSS</a>
+    <a href="javaScript" target="_blank" class="card">JS</a>
     <a href="VUE安装.html" class="card">VUE</a>
 </div>
 

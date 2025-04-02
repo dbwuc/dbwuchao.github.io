@@ -168,6 +168,7 @@
                 </div>
 
             </div>
+        </div>
 
             <p>（3）否定伪类</p>
 
@@ -495,7 +496,130 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium laudantium commodi deserunt explicabo, ipsum fugiat natus atque nihil omnis eum mollitia obcaecati accusamus beatae tempore aspernatur molestiae. Facilis sed maxime recusandae ducimus numquam vel provident laudantium quibusdam tenetur aliquam eligendi modi atque nemo eius saepe, mollitia, aliquid magni! Optio quos tempora dolorum molestiae praesentium est facere ducimus, voluptates velit. Aperiam repellat quod nesciunt suscipit quo repellendus, iste quas, rerum obcaecati officiis quos, praesentium vel ipsa architecto eligendi sed dolorem in aliquid. Non facilis repellat iure cumque cupiditate asperiores quos quod sunt delectus quis eos porro nesciunt repudiandae error, quam vero.
             </div>
             <div class="test">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis officiis earum molestias ratione possimus dolore cumque, alias quae ducimus perferendis odio laboriosam necessitatibus quibusdam ipsam? Dolorem laudantium ut hic recusandae dolores facere magni quasi labore nobis sint? Adipisci quasi nobis accusamus sunt aut? Aliquam aut id dolor officiis ab, in, repudiandae dolore eius tempore et molestias deleniti consequatur eum rem natus architecto sed libero excepturi debitis, autem voluptates blanditiis ut. Enim odio in repudiandae corporis soluta neque tempore, exercitationem totam eligendi qui quos inventore fuga incidunt quaerat. Saepe iste accusantium veritatis cupiditate sint cumque? Et temporibus quas praesentium consectetur nostrum!</div>
-            <p>浮动特点:脱离文档流，不回独占一行，不回margin合并，不回想行内块一样被当作文本处理</p>
+            <p>浮动特点:脱离文档流，不回独占一行，不回margin合并，不回想行内块一样被当作文本处理，float</p>
             <p>浮动联系</p>
-            <p>浮动影响</p>
+            <a>1、父元素高度塌陷</a>
+            <a>1、后面的兄弟元素，会占据浮动元素之前的位置，再浮动元素的下面；对前面的兄弟无影响</a>
+            <p>浮动影响及解决办法:clear:both。消除浮动兄弟的影响</p>
+            <p>浮动影响及解决办法:最好的.class::after{
+            content:'';display:block; clear:both    
+            }</p>
+            <p>浮动布局联系</p>
+            <div class="container">
+                <div class="page-header clearfix">
+                    <div class="logo  leftfix">logo</div>
+                    <div class="banner1 leftfix">banner1</div>
+                    <div class="banner2 leftfix">banner2</div>
+                </div>
+                <div class="menu">菜单</div>
+                <div class="content clearfix">
+                    <div class="left leftfix">
+<div class="top clearfix">
+    <div class="item1 leftfix">栏目一</div>
+    <div class="item2 leftfix">栏目二</div>
+
+</div>
+<div class="bottom clearfix">
+    <div class="item3 leftfix">栏目三</div>
+    <div class="item4 leftfix">栏目四</div>
+    <div class="item5 leftfix">栏目五</div>
+    <div class="item6 leftfix">栏目六</div>
+</div>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="right rightfix">
+                        <div class="item7 ">栏目七</div>
+                        <div class="item8">栏目八</div>
+                        <div class="item9">栏目九</div>
+                    </div>
+                </div>
+                <div class="footer">页脚</div>
+            </div>
+            <h2>十八、定位</h2>
+            <p>1、相对定位：position:relative；left:100px</p>
+            <p>应用场景对元素进行微调：比如向右下角落。</p>
+            <p>开启相对定位，并未脱离文档流</p>
+            <p>开启相对定位，可以超出父容器，层级较高，后来者居上</p>
+            <p>可以和margin公用，但不好意思计算不推荐</p>
+            <p>可以开启浮动，不建议一起使用</p>
+            <p>2、绝对定位：position:absolate。参考的点：包含块</p>
+            <p>没脱离文档流的元素，父亲是包含块。</p>
+            <p>脱离文档流的元素，第一个开启定位的祖先元素，是他的包含块。</p>
+            <p>绝对定位脱离文档流，but浮动初衷是文字环绕图片。</p>
+            <p>绝对定位和浮动不能共存，听绝对定位，</p>
+            <p>只要进行绝对定位，就是定位元素</p>
+
+            <p>3、固定定位：position:fixed,参考点找视口</p>
+            <p>脱离文档流</p>
+            <p>属性可以用上下左右调整</p>
+
+            <p>4、粘性定位： position:sticky；top:0px;参考点是离它最近的拥有滚动行为的祖先元素</p>
+            <div class="page-header">头部</div>
+            <div class="content">
+                <div class="item">
+                    <div class="first">A</div>
+                    <h2>A1</h2>
+                    <h2>A2</h2>
+                    <h2>A3</h2>
+                    <h2>A4</h2>
+                    <h2>A5</h2>
+                    <h2>A6</h2>
+                    <h2>A7</h2>
+                    <h2>A8</h2>
+                </div>
+                <div class="item">
+                    <div class="first">B</div>
+                    <h2>B1</h2>
+                    <h2>B2</h2>
+                    <h2>B3</h2>
+                    <h2>B4</h2>
+                    <h2>B5</h2>
+                    <h2>B6</h2>C
+                    <h2>B7</h2>
+                    <h2>B8</h2>
+                </div>
+                <div class="item">
+                    <div class="first">C</div>
+                    <h2>C1</h2>
+                    <h2>C2</h2>
+                    <h2>C3</h2>
+                    <h2>C4</h2>
+                    <h2>C5</h2>
+                    <h2>C6</h2>
+                    <h2>C7</h2>
+                    <h2>C8</h2>
+                </div>
+            </div>
+            <p>5、定位的层级</p>
+            <div class="level_outer">
+                <div class="boxx box11">1</div>
+                <div class="boxx box22">2</div>
+                <div class="boxx box33">3</div>
+                <div class="boxx box44">4</div>
+            </div>
+
+            <p>6 、定位特殊应用，可以越过padding，父相对定位，子绝对定位，同时写仅限使用left0,right0同时设置充满，或设置值居中左右留padding</p>
+            <p>居中子使用top:0,bottom:0,left:0,right:0,margin:auto同时设置</p>
+            <h2>十九、布局</h2>
+            <p>1、版心，可以多个</p>
+            <a>只关注宽度，不给宽度。目前版心960-1200，无论电脑屏幕多大，都保证页面在中间显示</a>
+            <p>2、常用类名</p>
+            <img src="./常用布局名词.jpg" width="400px" height="200px">
+            <p>3、重置默认样式：</p>
+            <a>全局选择器，实际开发不会*style{
+                margin: 0;
+                padding: 0;
+               }</a>
+            <a>reset.css</a>
+            <a>Normalize.css</a>
+
+ 
+
+
 </body>
