@@ -1,42 +1,114 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
+
 <head>
-<style>
-  
-</style>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+
+        // alert("这是我的第一个JS代码");
+        // document.writeln(1)
+        // document.writeln(1)
+        // document.writeln(1)
+        // document.writeln(1)
+        // console.log("控制台输出log")
+        function jsBaseClick() {
+            alert("惊喜吧");
+        }
+        //输入
+        function jsBaseInput() {
+            var score=prompt('请输入成绩：');
+            if(score>=60){
+                alert('及格')
+            }else{
+                alert('不及格')
+            }
+        }
+        //创建对象
+        var obj=new Object()
+        obj.name="ss";
+        obj.gender="男";
+        obj.age=18;
+        console.log(obj)
+    </script>
+
+    <link rel="stylesheet" href="./js_outer_style.css">
 
 </head>
 
+
+
+
 <body>
-    
+    <div class="top">JS</div>
+    <div class="outer">
+        <div class="left">
+            <a>目录</a><br>
+            <a href="#js编写位置">js编写位置</a><br>
+            <a href="#基本语法">基本语法</a><br>
+            <a href="#字面量和变量">字面量和变量</a><br>
+            <a href="#标识符">标识符</a><br>
+            <a href="#数据类型">数据类型</a><br>
+            <a href="#进制">进制</a><br>
+            <a href="#运算符">运算符</a><br>
+            <a href="#对象">对象</a><br>
+        </div>
+        <div class="right">
+            <div id="js编写位置">
+                <h2>js编写位置</h2>
+                <p>js代码编写至标签的onclick属性中</p>
+                <button onclick="jsBaseClick()">点我一下有惊喜</button><br>
+                <p>js推荐引入外部.js文件，使用script标签+src.一旦引入外部js代码，就不能再编写代码，即使编写浏览器也会忽略。如有需要可以再闯进新的script白哦前编写内部代码</p>
+            </div>
+            <div id="基本语法">
+                <h2>基本语法</h2>
+                <p>1、js严格区分大小写</p>
+                <p>2、JS每条语句以分号；结尾--如果不加分号，浏览器自动添加性能消耗。有时候浏览器会加错分号</p>
+                <p>3、js会忽略多个空格和换行</p>
+            </div>
+            <div id="字面量和变量">
+                <h2>字面量和变量</h2>
+                <p>var 声明变量  var a; a=123;</p>
+            </div>
+            <div id="标识符">
+                <h2>标识符</h2>
+                <p>字母、数字、_、$</p>
+                <p>不能以数字开头</p>
+                <p>不能是ES中的关键字或保留字</p>
+                <p>驼峰命名，首字母小写，每个单词大写，其余小写</p>
+            </div>
+            <div id="数据类型">
+                <h2>数据类型</h2>
+                <p>1、字符串:强转变量.toString()、String(变量)强转</p>
+                <p>2、Number(整数和浮点数)，Number(变量)函数、parseInt等函数</p>
+                <p>3、Boolean:Boolean(变量)函数</p>
+                <p>4、Null和Undefined（typeof检查null返回object）</p>
+                <p>5、其他进制数字</p>
+            </div>
+            <div id="进制">
+                <h2>进制</h2>
+                <p>1、16进制以0x开头</p>
+                <p>2、8进制以0开头</p>
+                <p>3、10进制以0b开头</p>
+              
+            </div>
+
+            <div id="运算符">
+                <h2>运算符</h2>
+                <p>1、算术运算符  + - * / %</p>
+                <p>2、逻辑运算符  ！非   &&与   ||或</p>
+                <p>if for switch break continue</p>
+            </div>
+
+            <div id="对象">
+                <h2>对象</h2>
+                <p>1、创建和读取，new Object()，赋值，取值使用对象【'属性名'】</p>
+          
+            </div>
+           
+        </div>
+    </div>
+
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
