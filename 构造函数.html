@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        function Person(){
+            this.name="ss";
+            this.age=18;
+            alert(this)
+            console.log(arguments)
+            
+        }
+        Person.prototype.sex="Famle"
+
+        var per= new Person();
+        // alert(per)
+        console.log(per.__proto__.__proto__)
+        console.log(per);
+        console.log(per.__proto__==Person.prototype)
+        console.log(Person.prototype)
+        
+        
+
+    </script>
+</head>
+
+</html>
+
+

@@ -30,6 +30,7 @@
         obj.gender="男";
         obj.age=18;
         console.log(obj)
+        jsBaseInput()
     </script>
 
     <link rel="stylesheet" href="./js_outer_style.css">
@@ -103,6 +104,36 @@
             <div id="对象">
                 <h2>对象</h2>
                 <p>1、创建和读取，new Object()，赋值，取值使用对象【'属性名'】</p>
+                <p>2、属性名和属性值</p>
+                <p>3、函数的参数、返回值等</p>
+                <p>4、全局作用域、函数作用域（现在自己作用域找，找不到去上一级找，一直到全局作用域，全局找不到则报错） </p>
+                <p>5、this </p>
+                <p>6、使用工厂方法创建对象：使用的构造函数是Object,导致无法区分对象 </p>
+                <p>7、构造函数 </p>
+                <p>8、原型对象：相当于公共区域，所有同一个类的实例都可以访问到这个原型对象，我们可以讲对象重共有的内容，统一设置到原型对象中 </p>
+                <a>向MyClass中原型添加属性a:MyClass.prototype.a=123</a>
+                <a>向MyClass中原型添加方法a:MyClass.prototype.func=function(){}</a>
+                <a>使用in检查队形或原型中是否有  "name" in ;hasOwnProperties检查自身对象是否有该属性</a>
+                <p>9、垃圾回收:浏览器自动回收浏览器，需要回收obj=null，将不再使用对象设置为null </p>
+                <p>10、数组 </p>
+                <p>11、call和apply </p>
+                <a>当调用call和appluy都是调用函数；调用可以将一个对象指定为第一个参数，此时这个对象将称为函数执行的this</a>
+                <p>12、arguments、Date、Math </p>
+                <p>（1）arguments:浏览器每次都会传递两个隐含的参数，类数组对象;可以通过length党法获取长度，可以通过下标获取参数</p>
+                <p>（2）callee:对应当前函数执行对象</p>
+                <p>13、包装类 :String() 、Number()、Boolean()，构造函数将基本数据类型转为对象过程</p>
+                <p>14、正则：new RegExp() </p>
+                <p>15、DOM:宿主对象：JS 运行环境（如浏览器、Node）提供的对象，比如浏览器的 window、document、XMLHttpRequest </p>
+                <img src="./节点的属性.jpg">
+                <p>文档节点</p>
+                <p>元素节点</p>
+                <p>属性节点</p>
+                <p>文本节点</p>
+                <p>16、事件 </p>
+                <button id="btn">点击我</button>
+                <script src="./button.js"></script>
+                
+
           
             </div>
            
