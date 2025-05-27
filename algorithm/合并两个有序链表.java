@@ -15,6 +15,24 @@ package algorithm;
  */
 public class 合并两个有序链表 {
     public Node mergerNode(Node node1, Node node2) {
+        if (node1==null)return node1;
+        if (node2==null)return node2;
+        Node current = new Node(-1);
+        while (node1!=null&&node2!=null){
+            if (node1.val<node2.val){
+                current.next=node1;
+                node1.next=node1;
+            }else {
+                current.next=node2;
+                node2.next=node2;
+            }
+            current=current.next;
+
+
+
+        }
+//
+        current.next=(node1!=null)?node1:node2;
 
         return node1;
     }
@@ -26,6 +44,10 @@ class Node {
     Node next;
 
     public Node() {
+    }
+
+    public Node(int val) {
+        this.val = val;
     }
 
     public Node(int val, Node next) {
