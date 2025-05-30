@@ -14,17 +14,18 @@ package algorithm;
  * 输出：[0]
  */
 public class 合并两个有序链表 {
-    public Node mergerNode(Node node1, Node node2) {
-        if (node1==null)return node1;
-        if (node2==null)return node2;
-        Node current = new Node(-1);
-        while (node1!=null&&node2!=null){
-            if (node1.val<node2.val){
-                current.next=node1;
-                node1.next=node1;
+    public Node mergerNode(Node list1, Node list2) {
+        if (list1==null)return list1;
+        if (list2==null)return list2;
+        Node dummy = new Node(-1);
+        Node current = dummy;
+        while (list1!=null&&list2!=null){
+            if (list1.val<list2.val){
+                current.next=list1;
+                list1=list1.next;
             }else {
-                current.next=node2;
-                node2.next=node2;
+                current.next=list2;
+                list2=list2.next;
             }
             current=current.next;
 
@@ -32,9 +33,9 @@ public class 合并两个有序链表 {
 
         }
 //
-        current.next=(node1!=null)?node1:node2;
+        current.next=(list1!=null)?list1:list2;
 
-        return node1;
+        return dummy.next;
     }
 }
 
