@@ -8,10 +8,17 @@ url = 'https://www.starbucks.com.cn/menu/'
 resp = urllib.request.urlopen(url)
 context = resp.read().decode('utf-8')
 soup = BeautifulSoup(context,'lxml')
-obj = soup.select("ul[class='grid padded-3 product'] div[class='preview circle']")
-for item in obj:
-    completePicUrl = 'https://www.starbucks.com.cn'+item.attrs.get('style').split('url("')[1].split('")')[0]
-    print(completePicUrl)
+# obj = soup.select("ul[class='grid padded-3 product'] div[class='preview circle']")
+# for item in obj:
+#     completePicUrl = 'https://www.starbucks.com.cn'+item.attrs.get('style').split('url("')[1].split('")')[0]
+#     print(completePicUrl)
+
+obj =soup.select_one("div[id='nav-overlay'] ul")
+a_tag=obj.find_all("a")
+for item in a_tag:
+    text = item.get_text(strip=True)
+    print(text)
+
 
 
 # 爬取证券之光板块信息案例
